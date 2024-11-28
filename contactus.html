@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>contact us</title>
+</head>
+<body>
+    <script>
+        function myfunction(){
+            alter("Sucessfully sumbited")
+        }
+    </script>
+    <div class="formBox">
+        <h2>Contact Us</h2>
+        <form method="post" action="https://script.google.com/macros/s/AKfycbwKzKO1OShzqAxxvufXfph-Ea7UxEPL4RtIrQM66ZGk9crK7T_7PFY1WbyJlMIWdbEy/exec" name="contactus" class="contactus">
+            <div class="nameInp">
+                <i class="fa fa-user icon"></i>
+                <input type="text" placeholder="Full Name" name="name" id="name">
+            </div>
+            <div class="mailInp">
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="mail" id="mail" placeholder="Email">
+            </div>
+            <div class="phoneInp">
+                <i class="fa-solid fa-phone"></i>
+                <input type="number" name="phone" id="phone" placeholder="Phone" >
+            </div>
+            <div class="queryInp">
+                <textarea name="query" id="query" cols="30" rows="2"
+                    placeholder="Address"></textarea>
+            </div>
+            <div class="queryInp">
+                <textarea name="photo" id="query" cols="30" rows="2"
+                    placeholder="Type of photoshoot"></textarea>
+            </div>
+            
+            
+
+            <div class="submitBtn">
+                <button id="btn">Send</button><br><br>
+                
+            </div>
+            
+        </form>
+        <div class="socialmedia icon" ><br>
+                                
+            <a href=" https://wa.me/9080035386"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+    <script>
+        
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbwKzKO1OShzqAxxvufXfph-Ea7UxEPL4RtIrQM66ZGk9crK7T_7PFY1WbyJlMIWdbEy/exec'
+			const form = document.forms['contactus']
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location.reload(); })
+				.catch(error => console.error('Error!', error.message))
+			})
+		 
+    </script>
+
+</body>
+</html>

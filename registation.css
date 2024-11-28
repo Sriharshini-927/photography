@@ -1,0 +1,61 @@
+body{
+    background-image: url(education9.jpg);
+    background-size:cover;
+    overflow: hidden;
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;  
+} 
+body{
+    background-image:url(pexels-tirachard-kumtanom-112571-733853.jpg) ;
+    background-size:cover;
+    overflow: hidden;
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;  
+} 
+h1{
+    font-family: Sans-serif; 
+    font-size: 30px;     
+    font-style: normal; 
+    font-weight: bold; 
+    color: blue;
+    text-align: center; 
+    text-decoration: underline
+   }
+   table{
+    font-family: verdana; 
+    color:white; 
+    font-size: 15px; 
+    font-style: normal;
+    font-weight: bold;
+    background: linear-gradient(to right, rgba(255, 105, 180, 0.6), rgba(93, 173, 226, 0.6));
+  
+    border-collapse: collapse; 
+    border: 6px solid #000000;
+    border-style: double;
+     
+   }
+   table.inner{
+    border: 10px
+   }
+   input[type=text], input[type=email], input[type=number]{
+    width: 50%;
+    padding: 3px 6px;
+    margin: 5px 0;
+    box-sizing: border-box;
+   }
+   button{
+    width: 15%;
+    padding: 4px 6px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: blueviolet;
+   background-color: burlywood;
+   }
+ 
+
+ 
+   
+   
